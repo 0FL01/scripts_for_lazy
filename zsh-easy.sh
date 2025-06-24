@@ -22,7 +22,7 @@ print_error() {
 
 # Обновление пакетов и установка zsh
 print_status "Обновление пакетов и установка zsh..."
-sudo apt update && sudo apt install zsh -y
+sudo apt update && sudo apt install zsh git -y
 
 # Проверка установки zsh
 if ! command -v zsh &> /dev/null; then
